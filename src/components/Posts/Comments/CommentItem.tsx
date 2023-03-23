@@ -17,7 +17,7 @@ import {
 } from "react-icons/io5";
 
 export type Comment = {
-  id?: string;
+  id: string;
   creatorId: string;
   creatorDisplayText: string;
   creatorPhotoURL: string;
