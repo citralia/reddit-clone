@@ -33,6 +33,7 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
   const selectedFileRef = useRef<HTMLInputElement>(null);
   const { selectedFile, setSelectedFile, onSelectFile } = useSelectFile();
   const [uploadingImage, setUploadingImage] = useState(false);
+  const setCommunityStateValue = useSetRecoilState(communityState);
   const { communityStateValue, onJoinOrLeaveCommunity } = useCommunityData();
 
   const isJoined = !!communityStateValue.mySnippets.find(
